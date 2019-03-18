@@ -1,9 +1,15 @@
 // Already coded in the backend: var katzDeliLine = [];
 
+//newNumber 
+
+var number = 0;
+
 //Using interpolation and push method.
-function takeANumber(lineOfPeopleArray, newPerson) {
-  lineOfPeopleArray.push(newPerson);
-  return `Welcome, ${newPerson}. You are number ${lineOfPeopleArray.length} in line.`
+function takeANumber(lineOfPeopleArray) {
+  var yourNumber = number + 1;
+  number++;
+  lineOfPeopleArray.push(yourNumber);
+  return `Welcome, ${yourNumber}. You are number ${lineOfPeopleArray.length} in line.`
 }
 
 //Using conditionals and array shift. 
